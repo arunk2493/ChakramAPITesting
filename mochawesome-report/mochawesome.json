@@ -5,9 +5,9 @@
     "passes": 4,
     "pending": 0,
     "failures": 0,
-    "start": "2020-07-31T17:09:10.540Z",
-    "end": "2020-07-31T17:09:12.531Z",
-    "duration": 1991,
+    "start": "2020-07-31T17:10:27.880Z",
+    "end": "2020-07-31T17:10:29.835Z",
+    "duration": 1955,
     "testsRegistered": 4,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "53d7e964-e9b3-4831-aa7a-c215d5286783",
+      "uuid": "d440c0b0-3a5a-4131-857a-bf579b91e9a3",
       "title": "",
       "fullFile": "",
       "file": "",
@@ -37,8 +37,8 @@
           "context": null,
           "code": "checkForUnfulfilledExpectations.call(this);\nrecordedExpects = [];",
           "err": {},
-          "uuid": "585f100b-3b62-41cf-a9fd-f0c868125c9e",
-          "parentUUID": "53d7e964-e9b3-4831-aa7a-c215d5286783",
+          "uuid": "3d6793fb-0111-4263-a1df-73563e8144c9",
+          "parentUUID": "d440c0b0-3a5a-4131-857a-bf579b91e9a3",
           "isHook": true,
           "skipped": false
         }
@@ -46,7 +46,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "47bda964-db6a-40fb-907c-268b98f324bf",
+          "uuid": "ea0f8f0e-7d68-49d8-a38b-f81834fdc134",
           "title": "BDD + Hooks",
           "fullFile": "/Users/arunkumaraswamy/Documents/projects/Study/Javascript/ChakramAPITesting/test/bddhooks.spec.js",
           "file": "/test/bddhooks.spec.js",
@@ -55,7 +55,7 @@
               "title": "\"before all\" hook: Before API",
               "fullTitle": "BDD + Hooks \"before all\" hook: Before API",
               "timedOut": false,
-              "duration": 777,
+              "duration": 774,
               "state": null,
               "speed": null,
               "pass": false,
@@ -64,8 +64,8 @@
               "context": null,
               "code": "var response = await chakram.post(\"https://reqres.in/api/users\",{\n    name: \"morpheus\",\n    job: \"leader\"\n});\nawait expect(response).to.have.status(201);\nthingName = await response.body.id;\n_6ba‍.g.console.log(thingName);\nawait expect(response.body.name).to.equal('morpheus');\nawait expect(response.body.id).to.not.equal(null);\nreturn chakram.wait();",
               "err": {},
-              "uuid": "9518acf2-3f35-4c62-b8e0-c7cb3786f8bd",
-              "parentUUID": "47bda964-db6a-40fb-907c-268b98f324bf",
+              "uuid": "9734d2cb-ea9b-426d-9604-04fa52a3cf34",
+              "parentUUID": "ea0f8f0e-7d68-49d8-a38b-f81834fdc134",
               "isHook": true,
               "skipped": false
             }
@@ -75,7 +75,7 @@
               "title": "\"after all\" hook: update dweet with result",
               "fullTitle": "BDD + Hooks \"after all\" hook: update dweet with result",
               "timedOut": false,
-              "duration": 1,
+              "duration": 0,
               "state": null,
               "speed": null,
               "pass": false,
@@ -84,8 +84,8 @@
               "context": null,
               "code": "console.log('-----XXXX______------')",
               "err": {},
-              "uuid": "3fa0e18e-41d9-4b5c-a431-0f31cfdb2c52",
-              "parentUUID": "47bda964-db6a-40fb-907c-268b98f324bf",
+              "uuid": "362b8639-cfca-4c27-9908-fc848b75535e",
+              "parentUUID": "ea0f8f0e-7d68-49d8-a38b-f81834fdc134",
               "isHook": true,
               "skipped": false
             }
@@ -95,7 +95,7 @@
               "title": "should verify the added data",
               "fullTitle": "BDD + Hooks should verify the added data",
               "timedOut": false,
-              "duration": 168,
+              "duration": 198,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -104,26 +104,26 @@
               "context": null,
               "code": "const postedData = chakram.get(\"https://reqres.in/api/users/2\");\nexpect(postedData).to.have.status(200);\nreturn chakram.wait();",
               "err": {},
-              "uuid": "35182884-9faa-4f7b-9e9e-7bda73bf3c90",
-              "parentUUID": "47bda964-db6a-40fb-907c-268b98f324bf",
+              "uuid": "fd2e680f-b9e2-40e0-bc69-48e79b64d90d",
+              "parentUUID": "ea0f8f0e-7d68-49d8-a38b-f81834fdc134",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "35182884-9faa-4f7b-9e9e-7bda73bf3c90"
+            "fd2e680f-b9e2-40e0-bc69-48e79b64d90d"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 168,
+          "duration": 198,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
         },
         {
-          "uuid": "1313ba56-ee4c-43bf-aecc-02a7127e7e5d",
+          "uuid": "da7062cf-fe34-46ab-a8b9-e0050e7be27a",
           "title": "Chakram",
           "fullFile": "/Users/arunkumaraswamy/Documents/projects/Study/Javascript/ChakramAPITesting/test/sample.spec.js",
           "file": "/test/sample.spec.js",
@@ -134,7 +134,7 @@
               "title": "should provide HTTP specific assertions - Omdb",
               "fullTitle": "Chakram should provide HTTP specific assertions - Omdb",
               "timedOut": false,
-              "duration": 169,
+              "duration": 162,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -143,8 +143,8 @@
               "context": null,
               "code": "var response = await chakram.get(\"https://reqres.in/api/users/2\");\nawait expect(response).to.have.status(200);\n    await expect(response).to.comprise.of.json(\n        {\n            data: {\n                avatar: \"https://s3.amazonaws.com/uifaces/faces/twitter/josephstein/128.jpg\",\n                email: \"janet.weaver@reqres.in\",\n                first_name: \"Janet\",\n                id: 2,\n                last_name: \"Weaver\"\n            },\n            ad: {\n                company: \"StatusCode Weekly\",\n                text: \"A weekly newsletter focusing on software development, infrastructure, the server, performance, and the stack end of things.\",\n                url: \"http://statuscode.org/\"\n            }\n        }\n    );\nreturn chakram.wait();",
               "err": {},
-              "uuid": "25124071-6f04-45ff-9917-38e0ff019d10",
-              "parentUUID": "1313ba56-ee4c-43bf-aecc-02a7127e7e5d",
+              "uuid": "76ffbefe-1763-408f-952c-e5beccfd688b",
+              "parentUUID": "da7062cf-fe34-46ab-a8b9-e0050e7be27a",
               "isHook": false,
               "skipped": false
             },
@@ -152,7 +152,7 @@
               "title": "should provide HTTP specific assertions - 2",
               "fullTitle": "Chakram should provide HTTP specific assertions - 2",
               "timedOut": false,
-              "duration": 161,
+              "duration": 165,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -161,8 +161,8 @@
               "context": null,
               "code": "var response = await chakram.get(\"https://reqres.in/api/users/2\");\nawait expect(response).to.have.status(200);\n_8b7‍.g.console.log(response.body);\nawait expect(response).to.comprise.of.json(\n    {\n        data: {\n            avatar: \"https://s3.amazonaws.com/uifaces/faces/twitter/josephstein/128.jpg\",\n            email: \"janet.weaver@reqres.in\",\n            first_name: \"Janet\",\n            id: 2,\n            last_name: \"Weaver\"\n        },\n        ad: {\n            company: \"StatusCode Weekly\",\n            text: \"A weekly newsletter focusing on software development, infrastructure, the server, performance, and the stack end of things.\",\n            url: \"http://statuscode.org/\"\n        }\n    }\n);\nreturn chakram.wait();",
               "err": {},
-              "uuid": "a1fe8e13-0d5f-4ba5-9430-a2a587bd043a",
-              "parentUUID": "1313ba56-ee4c-43bf-aecc-02a7127e7e5d",
+              "uuid": "0bac1646-1460-4961-a39f-105bc1239f80",
+              "parentUUID": "da7062cf-fe34-46ab-a8b9-e0050e7be27a",
               "isHook": false,
               "skipped": false
             },
@@ -170,7 +170,7 @@
               "title": "should provide HTTP specific assertions - POST",
               "fullTitle": "Chakram should provide HTTP specific assertions - POST",
               "timedOut": false,
-              "duration": 707,
+              "duration": 646,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -179,22 +179,22 @@
               "context": null,
               "code": "var response = await chakram.post(\"https://reqres.in/api/users\",{\n    name: \"morpheus\",\n    job: \"leader\"\n});\nawait expect(response).to.have.status(201);\n_8b7‍.g.console.log(response.body);\n       await expect(response.body.name).to.equal('morpheus');\n       await expect(response.body.id).to.not.equal(null);\nreturn chakram.wait();",
               "err": {},
-              "uuid": "234bb780-eb76-4a89-9830-0071b6ca4486",
-              "parentUUID": "1313ba56-ee4c-43bf-aecc-02a7127e7e5d",
+              "uuid": "6b7dea72-66c9-4fa1-8b7b-7204263f7b36",
+              "parentUUID": "da7062cf-fe34-46ab-a8b9-e0050e7be27a",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "25124071-6f04-45ff-9917-38e0ff019d10",
-            "a1fe8e13-0d5f-4ba5-9430-a2a587bd043a",
-            "234bb780-eb76-4a89-9830-0071b6ca4486"
+            "76ffbefe-1763-408f-952c-e5beccfd688b",
+            "0bac1646-1460-4961-a39f-105bc1239f80",
+            "6b7dea72-66c9-4fa1-8b7b-7204263f7b36"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 1037,
+          "duration": 973,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
