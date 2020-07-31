@@ -29,7 +29,6 @@ describe("Chakram", function() {
         var response = await chakram.get("https://reqres.in/api/users/2");
         await expect(response).to.have.status(200);
         console.log(response.body);
-        const file = require()
         await expect(response).to.comprise.of.json(
             {
                 data: {
