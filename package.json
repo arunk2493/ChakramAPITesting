@@ -1,0 +1,30 @@
+{
+  "name": "apitestingsample",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --require esm --reporter mochawesome",
+    "open": "open mochawesome-report/mochawesome.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arunk2493/ChakramAPITesting.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arunk2493/ChakramAPITesting/issues"
+  },
+  "homepage": "https://github.com/arunk2493/ChakramAPITesting#readme",
+  "devDependencies": {
+    "chakram": "^1.5.0",
+    "mochawesome": "^6.1.1"
+  },
+  "dependencies": {
+    "chai": "^4.2.0",
+    "esm": "^3.2.25",
+    "file-system": "^2.2.2",
+    "mocha": "^8.0.1"
+  }
+}

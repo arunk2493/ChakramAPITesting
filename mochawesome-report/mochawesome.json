@@ -1,0 +1,162 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 2,
+    "pending": 0,
+    "failures": 1,
+    "start": "2020-07-31T16:37:06.242Z",
+    "end": "2020-07-31T16:37:07.082Z",
+    "duration": 840,
+    "testsRegistered": 3,
+    "passPercent": 66.66666666666666,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "aabe5ba7-8438-4f05-a0a4-6e42a6f55894",
+      "title": "",
+      "fullFile": "",
+      "file": "",
+      "beforeHooks": [],
+      "afterHooks": [
+        {
+          "title": "\"after each\" hook",
+          "fullTitle": "\"after each\" hook",
+          "timedOut": false,
+          "duration": 0,
+          "state": null,
+          "speed": null,
+          "pass": false,
+          "fail": false,
+          "pending": false,
+          "context": null,
+          "code": "checkForUnfulfilledExpectations.call(this);\nrecordedExpects = [];",
+          "err": {},
+          "uuid": "dc67ed2d-8dcf-40c9-8610-1c096807f7a2",
+          "parentUUID": "aabe5ba7-8438-4f05-a0a4-6e42a6f55894",
+          "isHook": true,
+          "skipped": false
+        }
+      ],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "bfae7069-8b4a-4b2b-a6c0-c7f0510bd34d",
+          "title": "Chakram",
+          "fullFile": "/Users/arunkumaraswamy/Documents/projects/Study/Javascript/ChakramAPITesting/test/sample.spec.js",
+          "file": "/test/sample.spec.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should provide HTTP specific assertions - Omdb",
+              "fullTitle": "Chakram should provide HTTP specific assertions - Omdb",
+              "timedOut": false,
+              "duration": 389,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "var response = await chakram.get(\"https://reqres.in/api/users/2\");\nawait expect(response).to.have.status(200);\n    await expect(response).to.comprise.of.json(\n        {\n            data: {\n                avatar: \"https://s3.amazonaws.com/uifaces/faces/twitter/josephstein/128.jpg\",\n                email: \"janet.weaver@reqres.in\",\n                first_name: \"Janet\",\n                id: 2,\n                last_name: \"Weaver\"\n            },\n            ad: {\n                company: \"StatusCode Weekly\",\n                text: \"A weekly newsletter focusing on software development, infrastructure, the server, performance, and the stack end of things.\",\n                url: \"http://statuscode.org/\"\n            }\n        }\n    );\nreturn chakram.wait();",
+              "err": {},
+              "uuid": "367058c2-7e64-4e02-adec-f0ffa12e6d44",
+              "parentUUID": "bfae7069-8b4a-4b2b-a6c0-c7f0510bd34d",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should provide HTTP specific assertions - 2",
+              "fullTitle": "Chakram should provide HTTP specific assertions - 2",
+              "timedOut": false,
+              "duration": 3,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const stream = createReadStream(\"/Users/arunkumaraswamy/Documents/projects/Study/Javascript/ChakramAPITesting/src/page/sample.json\");\n        var response = await chakram.get(\"https://reqres.in/api/users/2\");\n        await expect(response).to.have.status(200);\n        _c7b‍.g.console.log(response.body);\n        await expect(response).to.comprise.of.json(stream);\n        return chakram.wait();",
+              "err": {
+                "message": "TypeError: createReadStream is not a function",
+                "estack": "TypeError: createReadStream is not a function\n    at Context.it (test/sample.spec.js:30:24)\n    at process.topLevelDomainCallback (domain.js:126:23)",
+                "diff": null
+              },
+              "uuid": "3b11f351-ac55-4866-a1a9-625c95080ae4",
+              "parentUUID": "bfae7069-8b4a-4b2b-a6c0-c7f0510bd34d",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "should provide HTTP specific assertions - POST",
+              "fullTitle": "Chakram should provide HTTP specific assertions - POST",
+              "timedOut": false,
+              "duration": 439,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "var response = await chakram.post(\"https://reqres.in/api/users\",{\n    name: \"morpheus\",\n    job: \"leader\"\n});\nawait expect(response).to.have.status(201);\n_c7b‍.g.console.log(response.body);\n       await expect(response.body.name).to.equal('morpheus');\n       await expect(response.body.id).to.not.equal(null);\nreturn chakram.wait();",
+              "err": {},
+              "uuid": "3e2d49c3-87f9-4f79-9145-e82d39a56436",
+              "parentUUID": "bfae7069-8b4a-4b2b-a6c0-c7f0510bd34d",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "367058c2-7e64-4e02-adec-f0ffa12e6d44",
+            "3e2d49c3-87f9-4f79-9145-e82d39a56436"
+          ],
+          "failures": [
+            "3b11f351-ac55-4866-a1a9-625c95080ae4"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 831,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "8.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.1.1"
+    },
+    "marge": {
+      "options": null,
+      "version": "5.1.0"
+    }
+  }
+}
