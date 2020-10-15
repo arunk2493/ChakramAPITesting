@@ -18,7 +18,7 @@ describe("BDD + Hooks", function () {
 
 
     it("should verify the added data", function () {
-        const postedData = chakram.get("https://reqres.in/api/users/2");
+        const postedData = chakram.get("https://reqres.in/api/users/3");
         expect(postedData).to.have.status(200);
         return chakram.wait();
     });
