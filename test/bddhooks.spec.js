@@ -20,10 +20,15 @@ describe("BDD + Hooks", function () {
     it("should verify the added data", function () {
         const postedData = chakram.get("https://reqres.in/api/users/3");
         expect(postedData).to.have.status(200);
+        console.log('-----XXXX______------')
         return chakram.wait();
     });
 
     after("update dweet with result", function () {
         console.log('-----XXXX______------')
+        console.log('-----XXXX______------')
+        console.log('-----XXXX______------')
+        console.log('-----XXXX______------')
+
     });
 });
